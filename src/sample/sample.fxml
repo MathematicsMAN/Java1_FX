@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="424.0" prefWidth="240.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Button layoutX="54.0" layoutY="151.0" mnemonicParsing="false" onAction="#doRandomAction" prefHeight="45.0" prefWidth="110.0" text="Ввод">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="numberInputField" layoutX="20.0" layoutY="88.0" onAction="#doRandomAction" prefHeight="63.0" prefWidth="200.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <padding>
+            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+         </padding>
+      </TextField>
+      <Label fx:id="randomNumberLabel" alignment="CENTER" layoutX="20.0" layoutY="252.0" prefHeight="63.0" prefWidth="200.0" text="0" textAlignment="CENTER" textFill="#0a04b9">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="58.0" prefHeight="45.0" prefWidth="171.0" text="Введите число:" />
+      <Label layoutX="9.0" layoutY="14.0" prefHeight="45.0" prefWidth="200.0" text="Угадайте число от 1 до 10">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="236.0" text="Введённое число:" />
+      <Label fx:id="compareNumber" layoutX="52.0" layoutY="324.0" text="меньше загаданого" />
+      <Button layoutX="59.0" layoutY="375.0" mnemonicParsing="false" onAction="#doReloadGame" prefHeight="26.0" prefWidth="123.0" text="Сброс игры" />
+   </children>
+</AnchorPane>
