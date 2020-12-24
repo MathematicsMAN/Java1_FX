@@ -2,6 +2,7 @@ package sample;
 
 import javafx.fxml.FXML;
         import javafx.scene.control.*;
+import javafx.scene.layout.AnchorPane;
 
 public class Controller {
     final private int numberTries = 3;
@@ -15,9 +16,13 @@ public class Controller {
 
     @FXML
     private Label compareNumber;
+    @FXML
+    private AnchorPane mainForm;
 
     @FXML
     public void initialize(){
+        mainForm.setPrefWidth(240);
+        mainForm.setPrefHeight(420);
         compareNumber.setVisible(false);
         randomNumberLabel.setText("0");
         numberInputField.setText("");
